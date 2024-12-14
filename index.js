@@ -1,13 +1,12 @@
 const fs = require("fs");
 const path = require("path");
+const os = require("os");
 
 const args = process.argv.slice(2);
 const customArg = args[0];
 
 const rootPath = path.join(
-  "C:",
-  "Users",
-  "boxma",
+  os.homedir(),
   "OneDrive",
   "바탕 화면",
   `${customArg}`
